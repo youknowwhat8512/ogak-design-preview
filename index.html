@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>오각 웹 시안</title>
+  <style>
+    :root{font-family:"Pretendard GOV Variable",sans-serif;color:#111;background:#f5f5f2}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100svh;display:grid;align-items:center;padding:clamp(24px,6vw,88px)}
+    main{width:min(1180px,100%);margin:auto}
+    header{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:clamp(36px,6vw,72px)}
+    h1{margin:0;font-size:clamp(42px,8vw,112px);line-height:.9;letter-spacing:-.06em}
+    p{margin:0;max-width:30ch;color:#666;line-height:1.65}
+    nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid #111;background:#fff}
+    a{min-height:260px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;color:#111;text-decoration:none;border-right:1px solid #111;transition:background .2s,color .2s}
+    a:last-child{border-right:0}
+    a:hover,a:focus-visible{background:#111;color:#fff}
+    a:focus-visible{outline:3px solid #7252ff;outline-offset:4px}
+    small{font-size:12px;letter-spacing:.14em}
+    strong{font-size:clamp(28px,4vw,54px);letter-spacing:-.04em}
+    span{font-size:13px;line-height:1.6;opacity:.7}
+    @media(max-width:720px){header{display:block}header p{margin-top:24px}nav{grid-template-columns:1fr}a{min-height:180px;border-right:0;border-bottom:1px solid #111}a:last-child{border-bottom:0}}
+  </style>
+</head>
+<body>
+  <main>
+    <header><h1>OGAK<br>WEB STUDIES</h1><p>오각의 웹 방향을 비교하기 위한 검토용 정적 시안입니다. 각 화면은 별도의 고정 경로로 열립니다.</p></header>
+    <nav aria-label="오각 웹 시안 선택">
+      <a href="./a/"><small>STUDY A</small><strong>투과</strong><span>화이트·블랙 구조와 색유리 이미지</span></a>
+      <a href="./d/"><small>STUDY D</small><strong>중첩과 반사</strong><span>다섯 공간 패널과 프로그램 기록</span></a>
+      <a href="./about/"><small>ABOUT OGAK</small><strong>오각 소개</strong><span>다섯 공간을 지나는 3D 스크롤 장면</span></a>
+    </nav>
+  </main>
+</body>
+</html>
